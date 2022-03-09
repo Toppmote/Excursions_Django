@@ -19,7 +19,7 @@ class City(models.Model):
 class Guide(models.Model):
     id = models.AutoField(primary_key=True, serialize=False, verbose_name='ID')
     name = models.CharField('name', max_length=50, blank=False)
-    surname = models.CharField('name', max_length=50, blank=False)
+    surname = models.CharField('surname', max_length=50, blank=False)
     birthdate = models.DateField('birthdate', blank=False)
     description = models.TextField('description', blank=False)
     photo = models.ImageField(upload_to='guides', blank=False)

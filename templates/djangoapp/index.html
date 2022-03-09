@@ -25,8 +25,8 @@
             </a>
             <ul class="nav nav-pills">
                 <li><a href="#" class="nav-link px-2 text-secondary">Начальная страница</a></li>
-                <li><a href="excursions.html" class="nav-link px-2 text-white">Экскурсии</a></li>
-                <li><a href="cities.html" class="nav-link px-2 text-white">Города</a></li>
+                <li><a href="{% url 'excursions_page' %}" class="nav-link px-2 text-white">Экскурсии</a></li>
+                <li><a href="{% url 'cities_page' %}" class="nav-link px-2 text-white">Города</a></li>
                 <li><a href="guides.html" class="nav-link px-2 text-white">Экскурсоводы</a></li>
                 <li><a href="{% url 'about_page' %}" class="nav-link px-2 text-white">О нас</a></li>
             </ul>
